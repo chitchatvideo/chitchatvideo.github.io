@@ -1,0 +1,34 @@
+<html>
+  <div id="xl_auth" style="width: 100%; height: 1000px"></div>
+        
+   <script type="application/javascript">
+      const s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://login-sdk.xsolla.com/latest/";
+      const head = document.getElementsByTagName("head")[0];
+      head.appendChild(s);
+      let xl;
+
+      s.addEventListener("load", function() {
+        xl = new XsollaLogin.Widget({
+          projectId: "fa8187dd-7cce-11eb-bc85-42010aa80004",
+          callbackUrl: "https://chitchatvideo.github.io/logincomplete",
+          preferredLocale: "en_XX"
+        });
+
+        xl.mount("xl_auth");
+        
+        xl.on(xl.events.Close, () => {
+          xl.close();
+        });
+      });
+      
+      // function for opening a widget by button
+      /* 
+        function openWidget() {
+          xl.open();
+        } 
+      */
+   </script>
+</html>
