@@ -28,7 +28,7 @@ ul {
   background-color: #f1f1f1;
 }
 
-li a {
+ul li a {
   display: block;
   color: #000;
   padding: 8px 16px;
