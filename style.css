@@ -8,9 +8,10 @@ body{
 }
 
 .makemeeting{
-  size: 100%;
+  height: 100px;
+  width: 100px;
 }
 
 .meetingname{
-
+  height: 100px;
 }
