@@ -1,9 +1,4 @@
-navigator.getUserMedia (
-   // constraints
-   {
-      video: true,
-      audio: true
-   },
+navigator.mediaDevices.getUserMedia({video: true})
 
 var videoId = 'video';
 var scaleFactor = 0.25;
